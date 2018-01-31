@@ -38,7 +38,7 @@
 					<target>
 						<artifact>
 							<groupId>dslforge.releng</groupId>
-							<artifactId>${platform.version.name}</artifactId>
+							<artifactId>neon</artifactId>
 							<version>0.9.1-SNAPSHOT</version>
 						</artifact>
 					</target>

@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>./parent</module>
-		<module>../org.dslforge.runtime.target/${platform.version.name}</module>
+		<module>../org.dslforge.runtime.target/neon</module>
 		<!-- Plug-ins -->
 		<module>../../plugins/org.dslforge.styledtext</module>
 		<module>../../plugins/org.dslforge.texteditor</module>

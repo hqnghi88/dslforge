@@ -13,7 +13,9 @@ Require-Bundle: org.eclipse.rap.ui,
  org.dslforge.workspace,
  org.dslforge.xtext.common,
  org.eclipse.emf.common,
- org.eclipse.emf.rap.edit.ui
+ org.eclipse.emf.rap.edit.ui,
+ org.eclipse.ui.navigator,
+ org.dslforge.workspace.config;bundle-version="0.9.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
 Export-Package: org.dslforge.workspace.ui,
@@ -23,3 +25,4 @@ Export-Package: org.dslforge.workspace.ui,
  org.dslforge.workspace.ui.wizards
 Bundle-Vendor: PlugBee
 Import-Package: org.apache.log4j
+Bundle-ClassPath: .

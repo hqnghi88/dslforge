@@ -12,7 +12,7 @@
 		<module>./parent</module>
 		
 		<!-- Target platform -->
-		<module>../org.dslforge.tooling.target/${platform.version.name}</module>
+		<module>../org.dslforge.tooling.target/neon</module>
 
 		<!-- Plug-ins -->
 		<module>../../plugins/org.dslforge.common</module>
@@ -36,6 +36,12 @@
 			
 	</modules>
 	<profiles>
+		<profile>
+			<id>platform-xoygen</id>
+			<properties>
+				<platform.version.name>oxygen</platform.version.name>
+			</properties>
+		</profile>
 		<profile>
 			<id>platform-mars</id>
 			<properties>

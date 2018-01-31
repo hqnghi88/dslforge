@@ -24,8 +24,7 @@ import javax.persistence.EntityManagerFactory;
 
 import org.apache.log4j.Logger;
 import org.dslforge.workspace.IWorkspaceConstants;
-import org.dslforge.workspace.config.IWorkspaceContribution;
-import org.dslforge.workspace.config.WorkspaceContribution;
+import org.dslforge.workspace.config.internal.WorkspaceContribution;
 import org.eclipse.core.runtime.IConfigurationElement;
 import org.eclipse.core.runtime.IExtensionRegistry;
 import org.eclipse.core.runtime.IPath;
@@ -55,7 +54,7 @@ public class WorkspaceActivator implements BundleActivator, ServiceTrackerCustom
 	private static final String WORKSPACE_CONTRIBUTION_CONFIG_ELEMENT = "contribution";
 	private static final String WORKSPACE_CONTRIBUTION_PATH = "path";
 
-	private static List<IWorkspaceContribution> workspaceContributions = new ArrayList<IWorkspaceContribution>();
+	private static List<WorkspaceContribution> workspaceContributions = new ArrayList<WorkspaceContribution>();
 	
 	// The shared instance
 	private static WorkspaceActivator plugin;
@@ -166,7 +165,7 @@ public class WorkspaceActivator implements BundleActivator, ServiceTrackerCustom
 		else throw new RuntimeException("Platform is not running at this point.");
 	}
 	
-	public IWorkspaceContribution getWorkspace() {
+	public WorkspaceContribution getWorkspace() {
 		if (workspaceContributions.isEmpty()) {
 			setupWorkspace();
 			if (workspaceContributions.size() == 1) {

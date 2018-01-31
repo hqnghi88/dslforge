@@ -6,7 +6,9 @@ Bundle-Version: 0.9.1.qualifier
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.rap.jface,
  com.google.guava,
- org.dslforge.workspace.config
+ org.dslforge.workspace,
+ org.dslforge.workspace.config;bundle-version="0.9.1",
+ org.dslforge.workspace
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.dslforge.workspace,
  org.dslforge.workspace.config,
