@@ -55,7 +55,11 @@ public class FileSystemContentProvider implements ITreeContentProvider {
 		if (parentElement instanceof File) {
 			File file = (File) parentElement;
 			if (file.isDirectory()) {
-				return file.listFiles();
+				File[] f=file.listFiles();
+//				for(int i=0; i<f.length; i++) {
+//					f[i]=new File(f[i].getAbsolutePath()+"  x");
+//				}
+				return f;
 			}
 		}
 		return new Object[] {};
